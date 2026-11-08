@@ -35,7 +35,7 @@ Millions of people in rural India lack reliable mobile connectivity. This platfo
 
 | Dimension | Detail |
 |-----------|--------|
-| Geography | **Tumkur district, Karnataka** (expandable to all 31 districts) |
+| Geography | **31 districts, Karnataka** |
 | Data | Public datasets (Census 2011, TRAI, OpenCelliD) + simulated data |
 | Algorithm | Greedy Maximum Coverage (future: ILP, Genetic Algorithm) |
 | Users | Telecom planners, district administrators, NGO researchers |
