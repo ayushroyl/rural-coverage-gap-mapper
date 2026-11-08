@@ -218,3 +218,53 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SW-27: Rural Coverage Gap Mapper — Project-specific additions
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Node.js / Frontend ────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+*.local
+
+# ── Environment files ─────────────────────────────────────────────────────────
+# .env is already listed above; these catch variations
+.env.*
+!.env.example
+
+# ── Geospatial / Dataset files ────────────────────────────────────────────────
+# Large datasets should NOT be committed; use DVC or object storage instead.
+data/raw/
+data/processed/
+data/simulated/
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.geojson
+*.gpkg
+*.pbf
+*.tif
+*.tiff
+*.nc
+*.csv.gz
+*.zip
+
+# ── OS / Editor artefacts ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+
+# ── Docker (future) ───────────────────────────────────────────────────────────
+*.env.docker
